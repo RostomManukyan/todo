@@ -1,40 +1,83 @@
+/* Container */
 .container {
-  padding: 40px;
-  text-align: center;
-  font-family: Arial, sans-serif;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
   margin-bottom: 70px;
+  margin-top: 80px;
 }
 
+/* Header / Hero */
 .header {
-  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+}
+
+.headerContent {
+  max-width: 600px;
 }
 
 .header h1 {
-  font-size: 2.5rem;
-  color: #333;
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #222;
 }
 
 .header p {
-  font-size: 1.2rem;
-  color: #666;
-  margin-bottom: 20px;
+  font-size: 1.25rem;
+  margin-bottom: 25px;
+  color: #555;
 }
 
-/* Image styling */
+/* Call-to-action button */
+.startBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.startBtn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Header image */
 .headerImage {
-  max-width: 30%;
+  max-width: 400px;
+  width: 100%;
   height: auto;
   margin-top: 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Features & React Info Sections */
 .features, .reactInfo {
-  margin-top: 30px;
-  text-align: left;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 60px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.features h2, .reactInfo h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
 }
 
 .features ul, .reactInfo ul {
@@ -43,25 +86,42 @@
 }
 
 .features li, .reactInfo li {
-  margin: 10px 0;
+  margin: 12px 0;
   font-size: 1.1rem;
+  color: #444;
 }
 
-.callToAction {
-  margin-top: 40px;
+/* Responsive */
+@media (max-width: 992px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .headerContent {
+    margin-bottom: 20px;
+  }
+
+  .headerImage {
+    max-width: 80%;
+  }
 }
 
-.startBtn {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+@media (max-width: 576px) {
+  .header h1 {
+    font-size: 2rem;
+  }
 
-.startBtn:hover {
-  background-color: #0056b3;
+  .header p {
+    font-size: 1rem;
+  }
+
+  .startBtn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .features h2, .reactInfo h2 {
+    font-size: 1.5rem;
+  }
 }

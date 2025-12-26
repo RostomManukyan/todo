@@ -1,39 +1,72 @@
+/* Container */
 .container {
-  padding: 40px;
-  font-family: Arial, sans-serif;
-  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
   margin-bottom: 70px;
+  margin-top: 80px;
+}
+
+/* Header / Hero */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+}
+
+.headerContent {
+  max-width: 600px;
 }
 
 .header h1 {
-  font-size: 2.4rem;
-  color: #333;
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  color: #222;
 }
 
 .header p {
-  font-size: 1.2rem;
-  color: #666;
-  margin-top: 10px;
+  font-size: 1.25rem;
+  color: #555;
 }
 
+/* Header image */
+.headerImage {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections */
 .section {
-  margin-top: 30px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 50px;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   text-align: left;
 }
 
 .section h2 {
-  font-size: 1.8rem;
-  color: #444;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #222;
 }
 
 .section p {
-  font-size: 1.1rem;
-  color: #555;
-  line-height: 1.6;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #444;
 }
 
 .section ul {
@@ -43,14 +76,52 @@
 
 .section li {
   font-size: 1.1rem;
-  margin: 8px 0;
+  margin: 10px 0;
+  color: #555;
 }
 
-.headerImage {
-  max-width: 40%; /* adjust as needed */
-  height: auto;
-  display: block;
-  margin: 20px auto; /* center horizontally */
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+/* Links */
+.link {
+  color: #007bff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .headerContent {
+    margin-bottom: 20px;
+  }
+
+  .headerImage {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .section p, .section li {
+    font-size: 1rem;
+  }
 }

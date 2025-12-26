@@ -7,8 +7,10 @@ function Home() {
     <div className={styles.container}>
       {/* Header / Hero Section */}
       <header className={styles.header}>
-        <h1>Welcome to My Todo App</h1>
-        <p>Stay organized and manage your tasks efficiently!</p>
+        <div className={styles.headerContent}>
+          <h1>Welcome to My Todo App</h1>
+          <p>Stay organized and manage your tasks efficiently!</p>
+        </div>
         <img src={homeImg} alt="Todo App illustration" className={styles.headerImage} />
       </header>
 

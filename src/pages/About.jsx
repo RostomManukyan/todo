@@ -5,14 +5,18 @@ import aboutImg from '../assets/About.png'; // your About page image
 function About() {
   return (
     <div className={styles.container}>
+      {/* Header / Hero */}
       <header className={styles.header}>
-        <h1>About This Todo App</h1>
-        <p>
-          A simple and interactive task management application built with ReactJS.
-        </p>
+        <div className={styles.headerContent}>
+          <h1>About This Todo App</h1>
+          <p>
+            A simple and interactive task management application built with ReactJS.
+          </p>
+        </div>
         <img src={aboutImg} alt="About Todo App" className={styles.headerImage} />
       </header>
 
+      {/* Project Overview */}
       <section className={styles.section}>
         <h2>Project Overview</h2>
         <p>
@@ -22,6 +26,7 @@ function About() {
         </p>
       </section>
 
+      {/* Technologies */}
       <section className={styles.section}>
         <h2>Technologies Used</h2>
         <ul>
@@ -32,6 +37,7 @@ function About() {
         </ul>
       </section>
 
+      {/* Why React */}
       <section className={styles.section}>
         <h2>Why React?</h2>
         <p>
@@ -40,6 +46,7 @@ function About() {
         </p>
       </section>
 
+      {/* About Me */}
       <section className={styles.section}>
         <h2>About Me</h2>
         <p>
@@ -49,8 +56,8 @@ function About() {
         </p>
         <p>
           You can contact me via email: <br />
-          TUMO: <a href="mailto:rostom.manukyan@tumo.org">rostom.manukyan@tumo.org</a> <br />
-          Personal: <a href="mailto:rostom.manukyan25@gmail.com">rostom.manukyan25@gmail.com</a>
+          TUMO: <a className={styles.link} href="mailto:rostom.manukyan@tumo.org">rostom.manukyan@tumo.org</a> <br />
+          Personal: <a className={styles.link} href="mailto:rostom.manukyan25@gmail.com">rostom.manukyan25@gmail.com</a>
         </p>
       </section>
     </div>
