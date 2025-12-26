@@ -1,0 +1,92 @@
+/* Center everything vertically and horizontally */
+.centerContainer {
+    display: flex;
+    flex-direction: column;
+    /* form on top, cards below */
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    /* page background */
+    gap: 40px;
+}
+
+/* Add Task form */
+.addTaskContainer {
+    background: linear-gradient(180deg, #1c1c1c, #111);
+    padding: 30px;
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.label {
+    color: white;
+    font-size: 28px;
+    font-family: Papyrus, fantasy;
+}
+
+.input,
+.textarea {
+    background-color: #3a3a3a;
+    border: 2px solid #555;
+    border-radius: 12px;
+    padding: 18px;
+    font-size: 18px;
+    color: white;
+    outline: none;
+
+    /* Fixed size */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.textarea {
+    height: 120px;
+    resize: none;
+    /* prevent manual resizing */
+}
+
+.input::placeholder,
+.textarea::placeholder {
+    color: #aaa;
+}
+
+.btn {
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #444;
+    border: 2px solid #555;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:focus {
+    border-color: white;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.btn:hover {
+    background-color: #666;
+    border-color: white;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Cards container */
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    /* allows cards to go to next line */
+    gap: 20px;
+    /* space between cards */
+    justify-content: center;
+    /* center cards horizontally */
+}

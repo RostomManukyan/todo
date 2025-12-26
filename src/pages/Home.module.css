@@ -1,0 +1,67 @@
+.container {
+  padding: 40px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-bottom: 70px;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Image styling */
+.headerImage {
+  max-width: 30%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.features, .reactInfo {
+  margin-top: 30px;
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features ul, .reactInfo ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.features li, .reactInfo li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.callToAction {
+  margin-top: 40px;
+}
+
+.startBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.startBtn:hover {
+  background-color: #0056b3;
+}
